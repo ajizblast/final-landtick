@@ -1,8 +1,9 @@
 import Jumbotron from "../component/Jumbotron";
 import { Form, Button, Container, Row, Col } from "react-bootstrap";
 import Ticket from "../component/Ticket";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { API } from "../config/api";
+import {Helmet} from "react-helmet";
 
 export default function Home() {
 
@@ -39,6 +40,9 @@ const handleClick = (e) => {
   
 return(
 <>
+     <Helmet>
+    <title>Land Tick | Land</title>
+  </Helmet>
     <Jumbotron/>
     <div className="d-flex" style={{ background: "#FFFFFF", marginTop: "-40px", boxShadow: "0px 5px 10px rgba(0, 0, 0, 0.25)", marginLeft: "60px", borderRadius: "5px" }}>
         <div className="d-flex" style={{ background: "#F2F2F2", width: "284px", height: "236px", borderRadius: "5px" }}>
