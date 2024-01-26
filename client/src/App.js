@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 
 import './App.css'
+import { Helmet } from 'react-helmet';
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navigationbar from './component/Navbar';
 import Home from './pages/Home';
@@ -67,6 +68,9 @@ const checkUser = async () => {
 };
   return (
     <div className="App">
+      <Helmet>
+        <title>Land Tick | Land</title>
+      </Helmet>
       <Navigationbar/>
       <Routes>
         <Route path="/" element={<Home />} />
