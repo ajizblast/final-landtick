@@ -7,7 +7,7 @@ import Swal from "sweetalert2"
  const ModalRegister = (props) => {
 
   const title = 'Landtick';
-  document.title = 'ilham | ' + title;
+  document.title = 'aji | ' + title;
   const [message, setMessage] = useState(null);
   const [form, setForm] = useState({
     fullname: '',
